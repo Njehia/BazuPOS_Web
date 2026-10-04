@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1124" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="4" />
+
+  <!-- Outer Glow Ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#F59E0B" stroke-opacity="0.08" stroke-width="40" filter="url(#glow)" />
+
+  <!-- Cash Register Body -->
+  <path d="M128 320h256v64a16 16 0 0 1-16 16H144a16 16 0 0 1-16-16v-64z" fill="#1E293B" stroke="#334155" stroke-width="6" />
+  
+  <!-- Cash Drawer Slot -->
+  <rect x="176" y="348" width="160" height="12" rx="6" fill="#0F172A" />
+  <circle cx="340" cy="354" r="5" fill="#F59E0B" />
+
+  <!-- Register Mid Section -->
+  <path d="M148 200h216l-20 120H168l-20-120z" fill="#0F172A" stroke="#334155" stroke-width="6" />
+
+  <!-- Thermal Receipt Slot -->
+  <path d="M208 140h96v60h-96z" fill="#334155" />
+  <!-- Receipt Paper with zigzag edge -->
+  <path d="M216 100h80v48h-80z" fill="#F8FAFC" />
+  <path d="M216 100l8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8v8h-80z" fill="#F8FAFC" />
+  <!-- Receipt lines -->
+  <line x1="228" y1="114" x2="284" y2="114" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <line x1="228" y1="126" x2="272" y2="126" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <line x1="228" y1="138" x2="280" y2="138" stroke="#10B981" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Keypad Buttons -->
+  <rect x="176" y="224" width="28" height="20" rx="4" fill="#334155" />
+  <rect x="214" y="224" width="28" height="20" rx="4" fill="#334155" />
+  <rect x="252" y="224" width="28" height="20" rx="4" fill="#334155" />
+  <rect x="176" y="254" width="28" height="20" rx="4" fill="#334155" />
+  <rect x="214" y="254" width="28" height="20" rx="4" fill="#334155" />
+  <rect x="252" y="254" width="28" height="20" rx="4" fill="#334155" />
+
+  <!-- Action Key -->
+  <rect x="290" y="224" width="46" height="50" rx="6" fill="url(#emeraldGrad)" />
+  <path d="M305 249l6 6 12-12" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Dynamic Lightning Bolt (Bazu Speed) -->
+  <path d="M360 140L290 280h50l-30 92 100-152h-60l40-80z" fill="url(#amberGrad)" filter="url(#glow)" />
+</svg>

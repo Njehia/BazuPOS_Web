@@ -1,0 +1,6 @@
+{
+  "name": "Bazu POS — Unbreakable Retail POS & Merchant Cloud Portal",
+  "description": "Official marketing website, downloads hub, and merchant cloud portal for Bazu POS (bazupos.co.ke). Offline-first POS, M-Pesa reconciliation, thermal printing, and phone sync for Kenyan retail stores, supermarkets, pharmacies, hardware shops, and businesses of all sizes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
